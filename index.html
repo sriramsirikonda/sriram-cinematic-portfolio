@@ -1,180 +1,120 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Sirikonda Sriram — Civil Engineering Graduate | Aspiring BIM Engineer."><title>Sirikonda Sriram — Aspiring BIM Engineer</title><style>@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@400;500;600;700;800;900&display=swap');
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Sirikonda Sriram — Civil Engineering Graduate | Aspiring BIM Engineer">
+<title>Sirikonda Sriram — Aspiring BIM Engineer</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800;900&display=swap');
+:root{--bg:#050505;--fg:#f4f1eb;--muted:#88847d;--line:#262626;--accent:#d76d32}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,Arial,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}
+.preloader{position:fixed;inset:0;z-index:99999;background:#050505;display:flex;align-items:center;padding:7vw;animation:preOut .9s cubic-bezier(.76,0,.24,1) 1.8s forwards}.preloader .k{font:11px "DM Mono";letter-spacing:.16em;color:var(--accent);text-transform:uppercase}.preloader .n{font-size:clamp(60px,12vw,180px);font-weight:900;letter-spacing:-.08em;line-height:.8;margin-top:20px}.preloader .line{height:2px;background:#eee;width:min(520px,70vw);margin-top:28px;transform-origin:left;animation:load 1.3s cubic-bezier(.76,0,.24,1) .15s forwards;transform:scaleX(0)}
+@keyframes load{to{transform:scaleX(1)}}@keyframes preOut{to{opacity:0;visibility:hidden;pointer-events:none;clip-path:inset(0 0 100% 0)}}
+.nav{position:fixed;z-index:100;left:0;right:0;top:0;padding:24px 5vw;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(#050505dd,transparent);font:10px "DM Mono";letter-spacing:.12em;color:#999}.brand{font:800 18px Inter;letter-spacing:-.05em;color:#fff}.brand i{color:var(--accent);font-style:normal}.navlinks{display:flex;gap:30px}.navlinks a:hover{color:#fff}.navright{color:#777}
+.hero{height:125vh;min-height:760px;position:relative;display:flex;align-items:center;padding:12vh 7vw;overflow:hidden}.grid{position:absolute;inset:0;background:linear-gradient(90deg,transparent 33.2%,#ffffff08 33.3%,transparent 33.4%,transparent 66.5%,#ffffff08 66.6%,transparent 66.7%),linear-gradient(#ffffff06 1px,transparent 1px);background-size:100% 100%,100% 120px;mask-image:linear-gradient(transparent,#000 20%,#000 80%,transparent)}.hero-copy{position:relative;z-index:2}.eyebrow{font:10px "DM Mono";letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:28px}.hero h1{font-size:clamp(64px,12.5vw,190px);line-height:.8;letter-spacing:-.085em;margin:0;font-weight:900}.hero h1 span{display:block;animation:up 1.1s cubic-bezier(.16,1,.3,1) 1.85s both}.hero h1 span:nth-child(2){animation-delay:1.95s}.hero p{max-width:360px;color:#a5a19a;line-height:1.65;font-size:14px;margin-top:42px;animation:fade 1s ease 2.15s both}.portrait{position:absolute;z-index:1;right:8vw;top:17%;width:min(31vw,430px);height:66vh;overflow:hidden;clip-path:polygon(9% 0,100% 0,91% 100%,0 100%);background:#111;animation:photo 1.5s cubic-bezier(.16,1,.3,1) 1.9s both}.portrait img{width:100%;height:100%;object-fit:cover;object-position:center top}.scrollhint{position:absolute;bottom:5vh;left:7vw;font:10px "DM Mono";color:#666;letter-spacing:.15em}
+@keyframes up{from{opacity:0;transform:translateY(100px)}to{opacity:1;transform:none}}@keyframes fade{from{opacity:0}to{opacity:1}}@keyframes photo{from{opacity:0;transform:translateY(50px) scale(1.12)}to{opacity:1;transform:none}}
+section{padding:10vh 7vw}.head{border-top:1px solid var(--line);padding-top:14px;margin-bottom:8vh;display:flex;justify-content:space-between;font:10px "DM Mono";letter-spacing:.13em;text-transform:uppercase;color:#777}.head b{font-weight:400;color:var(--accent)}
+.project{margin-bottom:16vh}.frame{height:min(72vh,820px);background:#0c0c0c;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}.frame img{width:100%;height:100%;object-fit:contain;display:block;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}.project:first-of-type .frame img{object-fit:cover}.frame:hover img{transform:scale(1.035)}.num{position:absolute;left:18px;bottom:18px;background:#050505d9;padding:8px 10px;font:10px "DM Mono";color:#aaa}.meta{display:grid;grid-template-columns:1fr 2fr 1fr;gap:30px;border-bottom:1px solid var(--line);padding:20px 0}.meta .tag{font:10px "DM Mono";color:var(--accent);letter-spacing:.12em}.meta h2{font-size:clamp(28px,4vw,56px);letter-spacing:-.055em;margin:0}.meta p{margin:0;color:#85827c;line-height:1.6;font-size:13px}
+.about{min-height:100vh}.aboutline{height:1px;background:#ddd;transform-origin:left}.aboutgrid{display:grid;grid-template-columns:1.3fr .7fr;gap:8vw;margin-top:8vh}.aboutbig{font-size:clamp(50px,8vw,120px);font-weight:800;letter-spacing:-.075em;line-height:.86}.aboutbig em{font-style:normal;color:#777}.aboutbig strong{color:var(--accent)}.copy p{font-size:16px;line-height:1.7;color:#b2aea7}.facts{border-top:1px solid var(--line);margin-top:42px;padding-top:18px;display:grid;gap:12px;font:10px "DM Mono";letter-spacing:.12em;color:#888}
+.experience{background:#090909}.exp{display:grid;grid-template-columns:.3fr 1fr;gap:7vw;border-bottom:1px solid var(--line);padding-bottom:9vh}.date{font:11px "DM Mono";color:var(--accent);line-height:1.8}.exp h2{font-size:clamp(58px,9vw,120px);letter-spacing:-.075em;margin:8px 0 22px}.exp p{max-width:680px;color:#aaa;line-height:1.7}
+.skillslist{border-top:1px solid var(--line)}.skill{display:grid;grid-template-columns:70px 1fr;border-bottom:1px solid var(--line);padding:20px 0}.skill b{font:10px "DM Mono";color:var(--accent);padding-top:8px}.skill span{font-size:clamp(25px,4vw,54px);letter-spacing:-.045em}
+.contact{min-height:100vh;display:flex;flex-direction:column;justify-content:center}.contacttitle{font-size:clamp(65px,12vw,175px);font-weight:900;letter-spacing:-.085em;line-height:.82;margin:4vh 0 12vh}.contacttitle em{font-style:normal;color:#777}.contactgrid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}.contactgrid>div{padding:24px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:9px}.contactgrid>div:nth-child(even){padding-left:28px;border-left:1px solid var(--line)}.contactgrid small{font:10px "DM Mono";color:#777;letter-spacing:.12em}.contactgrid a,.contactgrid p{margin:0;font-size:16px;color:#ddd}.contactgrid a:hover{color:var(--accent)}
+footer{border-top:1px solid var(--line);padding:24px 7vw;display:flex;justify-content:space-between;font:9px "DM Mono";letter-spacing:.12em;color:#666}footer b{font:800 17px Inter;letter-spacing:-.05em;color:#fff}
+.reveal{opacity:0;transform:translateY(50px);transition:opacity .9s ease,transform .9s cubic-bezier(.16,1,.3,1)}.reveal.show{opacity:1;transform:none}
+@media(max-width:800px){.nav{padding:18px 5vw}.navlinks{display:none}.navright{font-size:8px}.hero{height:105vh;min-height:700px;padding:15vh 6vw 7vh;align-items:flex-end}.hero h1{font-size:17vw}.portrait{top:15%;right:5vw;width:48vw;height:48vh;opacity:.75}.hero p{font-size:12px;max-width:270px;margin-top:28px}.scrollhint{left:6vw}.head{font-size:8px;margin-bottom:6vh}.head span:last-child{display:none}section{padding:8vh 6vw}.frame{height:57vh}.project{margin-bottom:10vh}.meta{grid-template-columns:1fr;gap:10px}.meta h2{font-size:36px}.aboutgrid{grid-template-columns:1fr;gap:6vh}.aboutbig{font-size:16vw}.copy p{font-size:14px}.exp{grid-template-columns:1fr;gap:4vh}.exp h2{font-size:62px}.skill{grid-template-columns:45px 1fr}.skill span{font-size:28px}.contacttitle{font-size:18vw;margin:5vh 0 9vh}.contactgrid{grid-template-columns:1fr}.contactgrid>div:nth-child(even){padding-left:0;border-left:0}footer{padding:22px 6vw;flex-direction:column;gap:12px}}
+</style>
+</head>
+<body>
+<div class="preloader"><div><div class="k">CIVIL / BIM / 2026</div><div class="line"></div><div class="n">SRIRAM</div></div></div>
 
-:root{--bg:#050505;--fg:#f1eee8;--muted:#8b8984;--line:#242424;--accent:#d36b32}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,Arial,sans-serif}body.locked{overflow:hidden}a{color:inherit;text-decoration:none}.preloader{position:fixed;inset:0;z-index:9999;background:#050505;display:grid;place-items:center;clip-path:inset(0)}.loader-inner{width:min(520px,80vw)}.loader-kicker,.hero-kicker,.section-head,.tag,.nav,.nav-index,.facts,.contact-grid span,footer{font-family:"DM Mono",monospace;text-transform:uppercase;letter-spacing:.12em;font-size:10px;color:var(--muted)}.loader-mark{height:2px;background:var(--fg);margin:22px 0}.loader-name{font-size:clamp(48px,10vw,110px);font-weight:900;letter-spacing:-.06em}.cursor-dot{position:fixed;width:7px;height:7px;border-radius:50%;background:var(--accent);z-index:10000;pointer-events:none}.cursor-ring{position:fixed;width:36px;height:36px;border:1px solid rgba(211,107,50,.65);border-radius:50%;z-index:9999;pointer-events:none;mix-blend-mode:screen}.nav{position:fixed;z-index:50;top:0;left:0;right:0;padding:24px 4vw;display:flex;justify-content:space-between;align-items:center;color:#aaa;background:linear-gradient(#050505cc,transparent)}.brand{font:800 18px Inter;color:#fff;letter-spacing:-.04em}.brand span{color:var(--accent)}.nav nav{display:flex;gap:28px}.nav nav a:hover{color:#fff}.nav-index{color:#777}.nav-index span{color:var(--accent)}main{overflow:hidden}.hero{height:120vh;min-height:760px;position:relative;padding:17vh 7vw 8vh;display:flex;align-items:center}.hero-grid{position:absolute;inset:0;background:linear-gradient(90deg,transparent 49.9%,#ffffff09 50%,transparent 50.1%),linear-gradient(#ffffff07 1px,transparent 1px);background-size:33.333% 100%,100% 110px;mask-image:linear-gradient(to bottom,transparent,#000 20%,#000 80%,transparent)}.hero-copy{position:relative;z-index:3;width:62%}.hero-kicker{margin-bottom:28px;color:var(--accent)}.hero-title{font-size:clamp(70px,13vw,190px);line-height:.82;letter-spacing:-.085em;margin:0;display:flex;flex-direction:column}.hero-title span{display:block}.hero-note{max-width:360px;color:#a5a29d;line-height:1.6;margin-top:42px;font-size:14px}.hero-photo-wrap{position:absolute;right:8vw;top:16%;width:min(31vw,430px);height:67vh;overflow:hidden;background:#111;clip-path:polygon(8% 0,100% 0,92% 100%,0 100%);z-index:2}.hero-photo{width:100%;height:115%;object-fit:cover;object-position:center top;filter:contrast(1.03)}.hero-scroll{position:absolute;bottom:5vh;left:7vw;color:#777;font:10px "DM Mono";letter-spacing:.15em}.work,.about,.experience,.skills,.contact{padding:10vh 7vw}.section-head{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:16px;margin-bottom:10vh}.work-card{margin-bottom:16vh}.work-image{height:min(74vh,820px);background:#0d0d0d;overflow:hidden;position:relative}.work-image img{width:100%;height:100%;object-fit:contain;display:block}.work-card:first-of-type .work-image img{object-fit:cover}.image-number{position:absolute;left:20px;bottom:18px;font:11px "DM Mono";color:#aaa;background:#050505b5;padding:7px 9px}.work-meta{display:grid;grid-template-columns:1fr 2fr 1fr;gap:30px;padding:22px 0;border-bottom:1px solid var(--line);align-items:start}.work-meta h2{margin:0;font-size:clamp(25px,4vw,55px);letter-spacing:-.05em}.work-meta p{margin:0;color:#898782;line-height:1.6;font-size:13px}.tag{color:var(--accent)}.about{min-height:100vh}.about-line{height:1px;background:var(--fg);margin-bottom:8vh}.about-layout{display:grid;grid-template-columns:1.4fr .6fr;gap:8vw}.about-big{font-size:clamp(50px,8vw,120px);font-weight:800;letter-spacing:-.07em;line-height:.86}.about-big em,.contact-title em{font-style:normal;color:#76736e}.about-big span{color:var(--accent)}.about-copy{padding-top:12px}.about-copy p{font-size:18px;line-height:1.6;color:#bbb8b2;max-width:480px}.facts{display:flex;flex-direction:column;gap:13px;border-top:1px solid var(--line);margin-top:50px;padding-top:18px}.experience{background:#090909}.experience-card{display:grid;grid-template-columns:.35fr 1fr;gap:7vw;border-bottom:1px solid var(--line);padding:5vh 0 9vh}.exp-year{font:12px "DM Mono";color:var(--accent);line-height:1.8}.experience-card h2{font-size:clamp(50px,8vw,110px);letter-spacing:-.07em;margin:12px 0}.experience-card p{max-width:650px;color:#aaa;line-height:1.7;font-size:15px}.skills-list{border-top:1px solid var(--line)}.skills-list div{display:grid;grid-template-columns:80px 1fr;border-bottom:1px solid var(--line);padding:22px 0;font-size:clamp(25px,4vw,55px);letter-spacing:-.04em}.skills-list b{font:10px "DM Mono";color:var(--accent);padding-top:10px}.contact{min-height:100vh;display:flex;flex-direction:column;justify-content:center}.contact-title{font-size:clamp(70px,13vw,180px);font-weight:900;letter-spacing:-.085em;line-height:.82;margin:6vh 0 12vh}.contact-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}.contact-grid>div{padding:25px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px}.contact-grid>div:nth-child(odd){padding-right:30px}.contact-grid>div:nth-child(even){padding-left:30px;border-left:1px solid var(--line)}.contact-grid a,.contact-grid p{font-size:17px;margin:0;color:#ddd}.contact-grid a:hover{color:var(--accent)}footer{border-top:1px solid var(--line);padding:25px 7vw;display:flex;justify-content:space-between;color:#666}footer span:first-child{color:#fff;font:800 18px Inter;letter-spacing:-.04em}@media(max-width:800px){.cursor-dot,.cursor-ring{display:none}.nav{padding:18px 5vw}.nav nav{display:none}.nav-index{font-size:8px}.hero{height:105vh;min-height:720px;padding:18vh 6vw 6vh;align-items:flex-end}.hero-copy{width:100%;padding-bottom:12vh}.hero-title{font-size:clamp(58px,17vw,110px)}.hero-photo-wrap{right:5vw;top:15%;width:47vw;height:47vh;opacity:.72}.hero-note{font-size:12px;max-width:260px;margin-top:28px}.work,.about,.experience,.skills,.contact{padding:8vh 6vw}.section-head{margin-bottom:7vh;font-size:8px}.section-head span:last-child{display:none}.work-card{margin-bottom:10vh}.work-image{height:58vh}.work-meta{grid-template-columns:1fr;gap:10px}.work-meta h2{font-size:36px}.about-layout{grid-template-columns:1fr;gap:6vh}.about-big{font-size:16vw}.about-copy p{font-size:15px}.experience-card{grid-template-columns:1fr;gap:4vh}.experience-card h2{font-size:60px}.skills-list div{grid-template-columns:45px 1fr;font-size:27px}.contact-title{font-size:18vw;margin:5vh 0 9vh}.contact-grid{grid-template-columns:1fr}.contact-grid>div:nth-child(even){padding-left:0;border-left:none}.contact-grid>div:nth-child(odd){padding-right:0}footer{padding:22px 6vw;flex-direction:column;gap:12px;font-size:8px}}
-</style></head><body><div id="root"></div><script src="https://unpkg.com/react@19/umd/react.development.js"></script><script src="https://unpkg.com/react-dom@19/umd/react-dom.development.js"></script><script src="https://unpkg.com/@babel/standalone/babel.min.js"></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script><script>gsap.registerPlugin(ScrollTrigger);</script><script type="text/babel">
-const {useRef,useEffect,useState}=React;
-const {createRoot}=ReactDOM;
+<header class="nav">
+<a class="brand" href="#home">SRIRAM<i>.</i></a>
+<nav class="navlinks"><a href="#work">WORK</a><a href="#about">ABOUT</a><a href="#experience">EXPERIENCE</a><a href="#contact">CONTACT</a></nav>
+<div class="navright">SCROLL TO EXPLORE ↓</div>
+</header>
 
+<section class="hero" id="home">
+<div class="grid"></div>
+<div class="hero-copy">
+<div class="eyebrow">CIVIL ENGINEERING GRADUATE / ASPIRING BIM ENGINEER</div>
+<h1><span>SIRIKONDA</span><span>SRIRAM</span></h1>
+<p>A visual portfolio of architecture, BIM, structural modelling and detailing.</p>
+</div>
+<div class="portrait"><img src="dp.png" alt="Sirikonda Sriram"></div>
+<div class="scrollhint">01 — IDENTITY</div>
+</section>
 
+<section id="work">
+<div class="head"><span><b>02</b> / SELECTED WORK</span><span>ACTUAL PROJECT ASSETS</span></div>
 
+<article class="project reveal"><div class="frame"><img src="render image(1).png" alt="G+5 residential apartment building render"><div class="num">01</div></div><div class="meta"><div class="tag">ARCHITECTURE</div><h2>G+5 Residential Apartment Building</h2><p>Revit Architecture course-completion project.</p></div></article>
 
+<article class="project reveal"><div class="frame"><img src="Screenshot 2026-09-10 005154.png" alt="Floor plan"><div class="num">02</div></div><div class="meta"><div class="tag">PLAN</div><h2>Floor Plan</h2><p>Architectural planning study.</p></div></article>
 
+<article class="project reveal"><div class="frame"><img src="Elevation-1.png" alt="Elevation sheet"><div class="num">03</div></div><div class="meta"><div class="tag">ELEVATION</div><h2>Elevation Studies</h2><p>Project elevation sheets.</p></div></article>
 
+<article class="project reveal"><div class="frame"><img src="Screenshot 2026-09-10 003444.png" alt="Structural BIM model"><div class="num">04</div></div><div class="meta"><div class="tag">STRUCTURAL BIM</div><h2>Structural BIM</h2><p>3D structural model study.</p></div></article>
 
-const A = "";
+<article class="project reveal"><div class="frame"><img src="Screenshot 2026-09-10 010048.png" alt="Reinforcement model"><div class="num">05</div></div><div class="meta"><div class="tag">REINFORCEMENT</div><h2>Reinforcement</h2><p>Reinforcement modelling study.</p></div></article>
 
-function Preloader({ done }) {
-  const ref = useRef(null);
-  useEffect(() => {
-    const tl = gsap.timeline({
-      onComplete: done,
-    });
-    tl.fromTo(".loader-mark", { scaleX: 0, transformOrigin: "left" }, { scaleX: 1, duration: 1.1, ease: "power4.inOut" })
-      .fromTo(".loader-name", { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: .8, ease: "power3.out" }, "-=.45")
-      .to(ref.current, { clipPath: "inset(0 0 100% 0)", duration: 1, ease: "power4.inOut", delay: .35 });
-    return () => tl.kill();
-  }, [done]);
-  return <div ref={ref} className="preloader">
-    <div className="loader-inner">
-      <div className="loader-kicker">CIVIL / BIM / 2026</div>
-      <div className="loader-mark" />
-      <div className="loader-name">SRIRAM</div>
-    </div>
-  </div>;
-}
+<article class="project reveal"><div class="frame"><img src="Screenshot 2026-09-10 010152.png" alt="Excavation plan"><div class="num">06</div></div><div class="meta"><div class="tag">EXCAVATION</div><h2>Excavation</h2><p>Excavation plan study.</p></div></article>
 
-function Cursor() {
-  const dot = useRef(null), ring = useRef(null);
-  useEffect(() => {
-    const x1 = gsap.quickTo(dot.current, "x", {duration:.08}), y1 = gsap.quickTo(dot.current, "y", {duration:.08});
-    const x2 = gsap.quickTo(ring.current, "x", {duration:.22, ease:"power3.out"}), y2 = gsap.quickTo(ring.current, "y", {duration:.22, ease:"power3.out"});
-    const move = e => { x1(e.clientX-3); y1(e.clientY-3); x2(e.clientX-18); y2(e.clientY-18); };
-    window.addEventListener("mousemove", move);
-    return () => window.removeEventListener("mousemove", move);
-  }, []);
-  return <><div className="cursor-dot" ref={dot}/><div className="cursor-ring" ref={ring}/></>;
-}
+<article class="project reveal"><div class="frame"><img src="Detailing-1.png" alt="Structural detailing sheet"><div class="num">07</div></div><div class="meta"><div class="tag">DETAILING</div><h2>Structural Detailing</h2><p>Structural detailing sheet.</p></div></article>
+</section>
 
-const projects = [
-  ["01", "ARCHITECTURE", "render image(1).png", "G+5 Residential Apartment Building", "Revit Architecture course-completion project."],
-  ["02", "PLAN", "Screenshot 2026-09-10 005154.png", "Floor Plan", "Architectural planning study."],
-  ["03", "ELEVATION", "Elevation-1.png", "Elevation Studies", "Project elevation sheets."],
-  ["04", "STRUCTURAL BIM", "Screenshot 2026-09-10 003444.png", "Structural BIM", "3D structural model study."],
-  ["05", "REINFORCEMENT", "Screenshot 2026-09-10 010048.png", "Reinforcement", "Reinforcement modelling study."],
-  ["06", "EXCAVATION", "Screenshot 2026-09-10 010152.png", "Excavation", "Excavation plan study."],
-  ["07", "DETAILING", "Detailing-1.png", "Structural Detailing", "Structural detailing sheet."],
-];
+<section class="about" id="about">
+<div class="head"><span><b>03</b> / ABOUT</span><span>HYDERABAD, TELANGANA</span></div>
+<div class="aboutline"></div>
+<div class="aboutgrid reveal">
+<div class="aboutbig">BUILDING<br><em>INFORMATION</em><br>THROUGH <strong>DESIGN.</strong></div>
+<div class="copy">
+<p>I’m Sirikonda Sriram, a Civil Engineering Graduate focused on building a career in BIM and digital construction workflows.</p>
+<p>My portfolio brings together architectural modelling, structural BIM studies, reinforcement, excavation and detailing work.</p>
+<div class="facts"><span>B.TECH / 8.33 CGPA</span><span>BIM TECHNOLOGIES</span><span>REVIT ARCHITECTURE</span><span>REVIT STRUCTURE — IN PROGRESS</span></div>
+</div>
+</div>
+</section>
 
-function Header() {
-  return <header className="nav">
-    <a className="brand" href="#home">SRIRAM<span>.</span></a>
-    <nav>
-      <a href="#work">WORK</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a>
-    </nav>
-    <div className="nav-index">SCROLL TO EXPLORE <span>↓</span></div>
-  </header>;
-}
+<section class="experience" id="experience">
+<div class="head"><span><b>04</b> / EXPERIENCE</span><span>FIELD EXPOSURE</span></div>
+<div class="exp reveal"><div class="date">FEB — APR<br>2026</div><div><div class="eyebrow">HMDA / DIVISION-I</div><h2>Site Intern</h2><p>Hyderabad Metropolitan Development Authority (HMDA), Hyderabad.</p><p>Exposure to construction execution, structural execution, quality control and site management on a motorable bridge construction project.</p></div></div>
+</section>
 
-function Hero() {
-  const section = useRef(null);
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.from(".hero-kicker", {y:30, opacity:0, duration:1, delay:.25});
-      gsap.from(".hero-title span", {y:90, opacity:0, duration:1.2, stagger:.08, ease:"power4.out", delay:.3});
-      gsap.from(".hero-photo", {scale:1.15, opacity:0, duration:1.6, ease:"power4.out", delay:.45});
-      gsap.to(".hero-photo", {yPercent:-10, scale:1.05, ease:"none", scrollTrigger:{trigger:section.current, start:"top top", end:"bottom top", scrub:1}});
-      gsap.to(".hero-title", {yPercent:-25, opacity:.2, ease:"none", scrollTrigger:{trigger:section.current, start:"top top", end:"bottom top", scrub:1}});
-    }, section);
-    return () => ctx.revert();
-  }, []);
-  return <section id="home" className="hero" ref={section}>
-    <div className="hero-grid"/>
-    <div className="hero-copy">
-      <div className="hero-kicker">CIVIL ENGINEERING GRADUATE / ASPIRING BIM ENGINEER</div>
-      <h1 className="hero-title"><span>SIRIKONDA</span><span>SRIRAM</span></h1>
-      <p className="hero-note">A visual portfolio of architecture, BIM, structural modelling and detailing.</p>
-    </div>
-    <div className="hero-photo-wrap"><img className="hero-photo" src={A+"dp.png"} /></div>
-    <div className="hero-scroll">01 — IDENTITY</div>
-  </section>;
-}
+<section>
+<div class="head"><span><b>05</b> / TOOLKIT</span><span>FAMILIAR WITH</span></div>
+<div class="skillslist reveal">
+<div class="skill"><b>01</b><span>Revit Architecture</span></div><div class="skill"><b>02</b><span>Revit Structure</span></div><div class="skill"><b>03</b><span>AutoCAD Civil</span></div><div class="skill"><b>04</b><span>AutoCAD Architecture</span></div><div class="skill"><b>05</b><span>Civil 3D</span></div><div class="skill"><b>06</b><span>QGIS</span></div><div class="skill"><b>07</b><span>STAAD.Pro</span></div><div class="skill"><b>08</b><span>MS Word</span></div><div class="skill"><b>09</b><span>Excel</span></div><div class="skill"><b>10</b><span>PowerPoint</span></div>
+</div>
+</section>
 
-function Work() {
-  const wrap = useRef(null);
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.utils.toArray(".work-card").forEach((card, i) => {
-        const img = card.querySelector("img");
-        gsap.fromTo(img, {scale:1.16}, {scale:1, ease:"none", scrollTrigger:{trigger:card, start:"top bottom", end:"bottom top", scrub:1}});
-        gsap.from(card.querySelector(".work-meta"), {y:40, opacity:0, duration:.9, scrollTrigger:{trigger:card, start:"top 72%"}});
-      });
-    }, wrap);
-    return () => ctx.revert();
-  }, []);
-  return <section id="work" className="work" ref={wrap}>
-    <div className="section-head"><span>02 / SELECTED WORK</span><span>ACTUAL PROJECT ASSETS</span></div>
-    {projects.map(([n, tag, img, title, desc]) =>
-      <article className="work-card" key={n}>
-        <div className="work-image"><img src={A+img}/><div className="image-number">{n}</div></div>
-        <div className="work-meta"><div className="tag">{tag}</div><h2>{title}</h2><p>{desc}</p></div>
-      </article>
-    )}
-  </section>;
-}
+<section class="contact" id="contact">
+<div class="head"><span><b>06</b> / CONTACT</span><span>LET'S CONNECT</span></div>
+<div class="contacttitle">LET'S BUILD<br><em>WHAT'S NEXT.</em></div>
+<div class="contactgrid">
+<div><small>EMAIL</small><a href="mailto:sriramsirikonda119@gmail.com">sriramsirikonda119@gmail.com</a></div>
+<div><small>PHONE</small><a href="tel:9392934742">+91 9392934742</a></div>
+<div><small>LINKEDIN</small><a href="https://www.linkedin.com/in/sriram-sirikonda-16633833b" target="_blank" rel="noreferrer">linkedin.com/in/sriram-sirikonda</a></div>
+<div><small>LOCATION</small><p>Hyderabad, Telangana</p></div>
+</div>
+</section>
 
-function About() {
-  const ref = useRef(null);
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.from(".about-line", {scaleX:0, transformOrigin:"left", duration:1.2, scrollTrigger:{trigger:ref.current, start:"top 70%"}});
-      gsap.from(".about-copy > *", {y:45, opacity:0, stagger:.12, duration:.9, scrollTrigger:{trigger:ref.current, start:"top 65%"}});
-    }, ref);
-    return () => ctx.revert();
-  }, []);
-  return <section id="about" className="about" ref={ref}>
-    <div className="section-head"><span>03 / ABOUT</span><span>HYDERABAD, TELANGANA</span></div>
-    <div className="about-line"/>
-    <div className="about-layout">
-      <div className="about-big">BUILDING<br/><em>INFORMATION</em><br/>THROUGH <span>DESIGN.</span></div>
-      <div className="about-copy">
-        <p>I’m Sirikonda Sriram, a Civil Engineering Graduate focused on building a career in BIM and digital construction workflows.</p>
-        <p>My portfolio brings together architectural modelling, structural BIM studies, reinforcement, excavation and detailing work.</p>
-        <div className="facts"><span>B.TECH / 8.33 CGPA</span><span>BIM TECHNOLOGIES</span><span>REVIT ARCHITECTURE</span><span>REVIT STRUCTURE — IN PROGRESS</span></div>
-      </div>
-    </div>
-  </section>;
-}
+<footer><b>SRIRAM.</b><span>CIVIL ENGINEERING / BIM / 2026</span><span>© 2026 SIRIKONDA SRIRAM</span></footer>
 
-function Experience() {
-  const ref=useRef(null);
-  useEffect(()=>{const ctx=gsap.context(()=>gsap.from(".experience-card",{y:70,opacity:0,duration:1,scrollTrigger:{trigger:ref.current,start:"top 70%"}}),ref);return()=>ctx.revert()},[]);
-  return <section className="experience" ref={ref}>
-    <div className="section-head"><span>04 / EXPERIENCE</span><span>FIELD EXPOSURE</span></div>
-    <div className="experience-card">
-      <div className="exp-year">FEB — APR<br/>2026</div>
-      <div><div className="tag">HMDA / DIVISION-I</div><h2>Site Intern</h2><p>Hyderabad Metropolitan Development Authority (HMDA), Hyderabad.</p><p>Exposure to construction execution, structural execution, quality control and site management on a motorable bridge construction project.</p></div>
-    </div>
-  </section>;
-}
-
-function Skills() {
-  return <section className="skills">
-    <div className="section-head"><span>05 / TOOLKIT</span><span>FAMILIAR WITH</span></div>
-    <div className="skills-list">
-      {["Revit Architecture","Revit Structure","AutoCAD Civil","AutoCAD Architecture","Civil 3D","QGIS","STAAD.Pro","MS Word","Excel","PowerPoint"].map((s,i)=><div key={s}><b>{String(i+1).padStart(2,"0")}</b><span>{s}</span></div>)}
-    </div>
-  </section>;
-}
-
-function Contact() {
-  return <section id="contact" className="contact">
-    <div className="section-head"><span>06 / CONTACT</span><span>LET'S CONNECT</span></div>
-    <div className="contact-title">LET'S BUILD<br/><em>WHAT'S NEXT.</em></div>
-    <div className="contact-grid">
-      <div><span>EMAIL</span><a href="mailto:sriramsirikonda119@gmail.com">sriramsirikonda119@gmail.com</a></div>
-      <div><span>PHONE</span><a href="tel:9392934742">+91 9392934742</a></div>
-      <div><span>LINKEDIN</span><a href="https://www.linkedin.com/in/sriram-sirikonda-16633833b" target="_blank" rel="noreferrer">linkedin.com/in/sriram-sirikonda</a></div>
-      <div><span>LOCATION</span><p>Hyderabad, Telangana</p></div>
-    </div>
-  </section>;
-}
-
-function App() {
-  const [loading,setLoading]=useState(true);
-  useEffect(()=>{document.body.classList.toggle("locked",loading); return()=>document.body.classList.remove("locked")},[loading]);
-  return <>{loading && <Preloader done={()=>setLoading(false)}/>}<Cursor/><Header/><main><Hero/><Work/><About/><Experience/><Skills/><Contact/></main><footer><span>SRIRAM.</span><span>CIVIL ENGINEERING / BIM / 2026</span><span>© {new Date().getFullYear()} SIRIKONDA SRIRAM</span></footer></>;
-}
-
-createRoot(document.getElementById("root")).render(<App />);
-</script></body></html>
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  const items=document.querySelectorAll(".reveal");
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");io.unobserve(e.target)}})
+  },{threshold:.12});
+  items.forEach(x=>io.observe(x));
+  const portrait=document.querySelector(".portrait img"), title=document.querySelector(".hero h1");
+  window.addEventListener("scroll",()=>{
+    const y=window.scrollY;
+    if(portrait) portrait.style.transform="translateY("+Math.min(y*.06,55)+"px) scale(1.03)";
+    if(title) title.style.transform="translateY("+Math.min(y*.035,35)+"px)";
+  },{passive:true});
+});
+</script>
+</body>
+</html>
