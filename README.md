@@ -1,0 +1,1 @@
+Sirikonda Sriram — Cinematic BIM Portfolio. Static GitHub/Vercel build.
