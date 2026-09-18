@@ -7,114 +7,71 @@
 <title>Sirikonda Sriram — Aspiring BIM Engineer</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800;900&display=swap');
-:root{--bg:#050505;--fg:#f4f1eb;--muted:#88847d;--line:#262626;--accent:#d76d32}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,Arial,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}
-.preloader{position:fixed;inset:0;z-index:99999;background:#050505;display:flex;align-items:center;padding:7vw;animation:preOut .9s cubic-bezier(.76,0,.24,1) 1.8s forwards}.preloader .k{font:11px "DM Mono";letter-spacing:.16em;color:var(--accent);text-transform:uppercase}.preloader .n{font-size:clamp(60px,12vw,180px);font-weight:900;letter-spacing:-.08em;line-height:.8;margin-top:20px}.preloader .line{height:2px;background:#eee;width:min(520px,70vw);margin-top:28px;transform-origin:left;animation:load 1.3s cubic-bezier(.76,0,.24,1) .15s forwards;transform:scaleX(0)}
-@keyframes load{to{transform:scaleX(1)}}@keyframes preOut{to{opacity:0;visibility:hidden;pointer-events:none;clip-path:inset(0 0 100% 0)}}
-.nav{position:fixed;z-index:100;left:0;right:0;top:0;padding:24px 5vw;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(#050505dd,transparent);font:10px "DM Mono";letter-spacing:.12em;color:#999}.brand{font:800 18px Inter;letter-spacing:-.05em;color:#fff}.brand i{color:var(--accent);font-style:normal}.navlinks{display:flex;gap:30px}.navlinks a:hover{color:#fff}.navright{color:#777}
-.hero{height:125vh;min-height:760px;position:relative;display:flex;align-items:center;padding:12vh 7vw;overflow:hidden}.grid{position:absolute;inset:0;background:linear-gradient(90deg,transparent 33.2%,#ffffff08 33.3%,transparent 33.4%,transparent 66.5%,#ffffff08 66.6%,transparent 66.7%),linear-gradient(#ffffff06 1px,transparent 1px);background-size:100% 100%,100% 120px;mask-image:linear-gradient(transparent,#000 20%,#000 80%,transparent)}.hero-copy{position:relative;z-index:2}.eyebrow{font:10px "DM Mono";letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:28px}.hero h1{font-size:clamp(64px,12.5vw,190px);line-height:.8;letter-spacing:-.085em;margin:0;font-weight:900}.hero h1 span{display:block;animation:up 1.1s cubic-bezier(.16,1,.3,1) 1.85s both}.hero h1 span:nth-child(2){animation-delay:1.95s}.hero p{max-width:360px;color:#a5a19a;line-height:1.65;font-size:14px;margin-top:42px;animation:fade 1s ease 2.15s both}.portrait{position:absolute;z-index:1;right:8vw;top:17%;width:min(31vw,430px);height:66vh;overflow:hidden;clip-path:polygon(9% 0,100% 0,91% 100%,0 100%);background:#111;animation:photo 1.5s cubic-bezier(.16,1,.3,1) 1.9s both}.portrait img{width:100%;height:100%;object-fit:cover;object-position:center top}.scrollhint{position:absolute;bottom:5vh;left:7vw;font:10px "DM Mono";color:#666;letter-spacing:.15em}
-@keyframes up{from{opacity:0;transform:translateY(100px)}to{opacity:1;transform:none}}@keyframes fade{from{opacity:0}to{opacity:1}}@keyframes photo{from{opacity:0;transform:translateY(50px) scale(1.12)}to{opacity:1;transform:none}}
-section{padding:10vh 7vw}.head{border-top:1px solid var(--line);padding-top:14px;margin-bottom:8vh;display:flex;justify-content:space-between;font:10px "DM Mono";letter-spacing:.13em;text-transform:uppercase;color:#777}.head b{font-weight:400;color:var(--accent)}
-.project{margin-bottom:16vh}.frame{height:min(72vh,820px);background:#0c0c0c;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}.frame img{width:100%;height:100%;object-fit:contain;display:block;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}.project:first-of-type .frame img{object-fit:cover}.frame:hover img{transform:scale(1.035)}.num{position:absolute;left:18px;bottom:18px;background:#050505d9;padding:8px 10px;font:10px "DM Mono";color:#aaa}.meta{display:grid;grid-template-columns:1fr 2fr 1fr;gap:30px;border-bottom:1px solid var(--line);padding:20px 0}.meta .tag{font:10px "DM Mono";color:var(--accent);letter-spacing:.12em}.meta h2{font-size:clamp(28px,4vw,56px);letter-spacing:-.055em;margin:0}.meta p{margin:0;color:#85827c;line-height:1.6;font-size:13px}
-.about{min-height:100vh}.aboutline{height:1px;background:#ddd;transform-origin:left}.aboutgrid{display:grid;grid-template-columns:1.3fr .7fr;gap:8vw;margin-top:8vh}.aboutbig{font-size:clamp(50px,8vw,120px);font-weight:800;letter-spacing:-.075em;line-height:.86}.aboutbig em{font-style:normal;color:#777}.aboutbig strong{color:var(--accent)}.copy p{font-size:16px;line-height:1.7;color:#b2aea7}.facts{border-top:1px solid var(--line);margin-top:42px;padding-top:18px;display:grid;gap:12px;font:10px "DM Mono";letter-spacing:.12em;color:#888}
-.experience{background:#090909}.exp{display:grid;grid-template-columns:.3fr 1fr;gap:7vw;border-bottom:1px solid var(--line);padding-bottom:9vh}.date{font:11px "DM Mono";color:var(--accent);line-height:1.8}.exp h2{font-size:clamp(58px,9vw,120px);letter-spacing:-.075em;margin:8px 0 22px}.exp p{max-width:680px;color:#aaa;line-height:1.7}
-.skillslist{border-top:1px solid var(--line)}.skill{display:grid;grid-template-columns:70px 1fr;border-bottom:1px solid var(--line);padding:20px 0}.skill b{font:10px "DM Mono";color:var(--accent);padding-top:8px}.skill span{font-size:clamp(25px,4vw,54px);letter-spacing:-.045em}
-.contact{min-height:100vh;display:flex;flex-direction:column;justify-content:center}.contacttitle{font-size:clamp(65px,12vw,175px);font-weight:900;letter-spacing:-.085em;line-height:.82;margin:4vh 0 12vh}.contacttitle em{font-style:normal;color:#777}.contactgrid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}.contactgrid>div{padding:24px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:9px}.contactgrid>div:nth-child(even){padding-left:28px;border-left:1px solid var(--line)}.contactgrid small{font:10px "DM Mono";color:#777;letter-spacing:.12em}.contactgrid a,.contactgrid p{margin:0;font-size:16px;color:#ddd}.contactgrid a:hover{color:var(--accent)}
-footer{border-top:1px solid var(--line);padding:24px 7vw;display:flex;justify-content:space-between;font:9px "DM Mono";letter-spacing:.12em;color:#666}footer b{font:800 17px Inter;letter-spacing:-.05em;color:#fff}
-.reveal{opacity:0;transform:translateY(50px);transition:opacity .9s ease,transform .9s cubic-bezier(.16,1,.3,1)}.reveal.show{opacity:1;transform:none}
-@media(max-width:800px){.nav{padding:18px 5vw}.navlinks{display:none}.navright{font-size:8px}.hero{height:105vh;min-height:700px;padding:15vh 6vw 7vh;align-items:flex-end}.hero h1{font-size:17vw}.portrait{top:15%;right:5vw;width:48vw;height:48vh;opacity:.75}.hero p{font-size:12px;max-width:270px;margin-top:28px}.scrollhint{left:6vw}.head{font-size:8px;margin-bottom:6vh}.head span:last-child{display:none}section{padding:8vh 6vw}.frame{height:57vh}.project{margin-bottom:10vh}.meta{grid-template-columns:1fr;gap:10px}.meta h2{font-size:36px}.aboutgrid{grid-template-columns:1fr;gap:6vh}.aboutbig{font-size:16vw}.copy p{font-size:14px}.exp{grid-template-columns:1fr;gap:4vh}.exp h2{font-size:62px}.skill{grid-template-columns:45px 1fr}.skill span{font-size:28px}.contacttitle{font-size:18vw;margin:5vh 0 9vh}.contactgrid{grid-template-columns:1fr}.contactgrid>div:nth-child(even){padding-left:0;border-left:0}footer{padding:22px 6vw;flex-direction:column;gap:12px}}
+:root{--bg:#050505;--fg:#f3f0ea;--muted:#85817b;--line:#252525;--accent:#d96d32}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,Arial,sans-serif;overflow-x:hidden}a{text-decoration:none;color:inherit}
+#intro{position:fixed;inset:0;background:#050505;z-index:9999;display:grid;place-items:center;pointer-events:none;animation:intro 1s cubic-bezier(.76,0,.24,1) 1.55s forwards}.intro-inner{width:86vw}.intro-k{font:10px "DM Mono";letter-spacing:.18em;color:var(--accent)}.intro-name{font-size:clamp(64px,13vw,190px);font-weight:900;letter-spacing:-.09em;line-height:.8;margin-top:18px}.intro-line{height:1px;background:#fff;transform-origin:left;animation:line 1s cubic-bezier(.76,0,.24,1) .2s forwards;transform:scaleX(0)}@keyframes line{to{transform:scaleX(1)}}@keyframes intro{to{opacity:0;visibility:hidden}}
+.nav{position:fixed;top:0;left:0;right:0;height:76px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;z-index:100;background:linear-gradient(#050505ee,transparent)}.logo{font-weight:900;font-size:18px;letter-spacing:-.06em}.logo i{font-style:normal;color:var(--accent)}.navlinks{display:flex;gap:28px;font:10px "DM Mono";letter-spacing:.12em;color:#8a8781}.navlinks a:hover{color:#fff}.resume{border:1px solid #383838;padding:11px 14px;color:#fff}.resume:hover{border-color:var(--accent);color:var(--accent)}
+.hero{min-height:115vh;height:115vh;position:relative;display:flex;align-items:center;padding:12vh 7vw;overflow:hidden}.grid{position:absolute;inset:0;background:linear-gradient(90deg,transparent 33.2%,#fff0007 33.3%,transparent 33.4%,transparent 66.5%,#fff0007 66.6%,transparent 66.7%)}.hero-copy{position:relative;z-index:2}.eyebrow{font:10px "DM Mono";letter-spacing:.15em;color:var(--accent);text-transform:uppercase}.hero h1{font-size:clamp(65px,12.5vw,185px);line-height:.79;letter-spacing:-.09em;margin:28px 0 0;font-weight:900}.hero h1 div{animation:rise 1s cubic-bezier(.16,1,.3,1) 1.72s both}.hero h1 div:nth-child(2){animation-delay:1.84s}.hero-copy p{max-width:380px;color:#9b9790;line-height:1.65;font-size:14px;margin-top:40px;animation:fade 1s ease 2s both}.portrait{position:absolute;right:8vw;top:17%;width:min(29vw,420px);height:66vh;overflow:hidden;clip-path:polygon(10% 0,100% 0,90% 100%,0 100%);background:#111;animation:photo 1.3s cubic-bezier(.16,1,.3,1) 1.8s both}.portrait img{width:100%;height:100%;object-fit:cover;object-position:center top}.scroll{position:absolute;bottom:5vh;left:7vw;font:9px "DM Mono";letter-spacing:.16em;color:#65615b}
+@keyframes rise{from{opacity:0;transform:translateY(90px)}to{opacity:1;transform:none}}@keyframes fade{from{opacity:0}to{opacity:1}}@keyframes photo{from{opacity:0;transform:translateY(45px) scale(1.08)}to{opacity:1;transform:none}}
+section{padding:11vh 7vw}.section-head{border-top:1px solid var(--line);padding-top:13px;display:flex;justify-content:space-between;margin-bottom:7vh;font:9px "DM Mono";letter-spacing:.14em;color:#68645e;text-transform:uppercase}.section-head b{font-weight:400;color:var(--accent)}
+.project{margin-bottom:14vh}.viewer{height:min(76vh,850px);background:#0c0c0c;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}.viewer.technical{background:#f5f4f0}.viewer img{width:100%;height:100%;object-fit:contain;display:block;transition:transform 1s cubic-bezier(.16,1,.3,1)}.viewer.arch img{object-fit:cover}.viewer:hover img{transform:scale(1.025)}.viewer .count{position:absolute;left:14px;bottom:14px;background:#050505d9;padding:7px 9px;font:9px "DM Mono";color:#bbb}.caption{display:grid;grid-template-columns:.7fr 2fr .8fr;gap:30px;border-bottom:1px solid var(--line);padding:18px 0}.caption .type{font:9px "DM Mono";letter-spacing:.14em;color:var(--accent)}.caption h2{font-size:clamp(30px,4vw,58px);letter-spacing:-.06em;margin:0}.caption p{margin:4px 0 0;color:#817d77;font-size:12px;line-height:1.6}
+.about{min-height:95vh}.aboutgrid{display:grid;grid-template-columns:1.3fr .7fr;gap:9vw}.aboutbig{font-size:clamp(54px,8vw,120px);line-height:.84;letter-spacing:-.08em;font-weight:800}.aboutbig em{font-style:normal;color:#74706b}.aboutbig strong{color:var(--accent)}.aboutcopy{color:#aaa59e;font-size:15px;line-height:1.75}.facts{margin-top:40px;border-top:1px solid var(--line);font:9px "DM Mono";color:#77736d;letter-spacing:.12em}.facts div{padding:13px 0;border-bottom:1px solid var(--line)}
+.exp{background:#090909}.experience{display:grid;grid-template-columns:.3fr 1fr;gap:8vw}.date{font:10px "DM Mono";color:var(--accent);line-height:1.8}.experience h2{font-size:clamp(60px,9vw,125px);letter-spacing:-.08em;margin:8px 0 22px}.experience p{max-width:700px;color:#aaa59f;line-height:1.7;font-size:14px}
+.skills{border-top:1px solid var(--line)}.skill{display:grid;grid-template-columns:60px 1fr;border-bottom:1px solid var(--line);padding:20px 0}.skill b{font:9px "DM Mono";color:var(--accent);padding-top:9px}.skill span{font-size:clamp(25px,4vw,55px);letter-spacing:-.05em}
+.contact{min-height:90vh;display:flex;flex-direction:column;justify-content:center}.contact h2{font-size:clamp(65px,12vw,175px);letter-spacing:-.09em;line-height:.82;margin:5vh 0 12vh}.contact h2 em{font-style:normal;color:#77736d}.contactgrid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}.contactgrid div{padding:22px 0;border-bottom:1px solid var(--line)}.contactgrid div:nth-child(even){padding-left:28px;border-left:1px solid var(--line)}.contactgrid small{display:block;font:9px "DM Mono";color:#706c66;letter-spacing:.14em;margin-bottom:9px}.contactgrid a,.contactgrid p{font-size:14px;color:#ddd;margin:0}.contactgrid a:hover{color:var(--accent)}
+footer{padding:24px 7vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;font:9px "DM Mono";color:#65615c;letter-spacing:.1em}footer b{font:900 17px Inter;color:#fff;letter-spacing:-.05em}
+.reveal{opacity:0;transform:translateY(45px);transition:opacity .8s ease,transform .9s cubic-bezier(.16,1,.3,1)}.reveal.show{opacity:1;transform:none}
+@media(max-width:800px){.nav{height:64px;padding:0 6vw}.navlinks{display:none}.hero{height:100vh;min-height:700px;padding:13vh 6vw 7vh;align-items:flex-end}.hero h1{font-size:17vw}.portrait{right:5vw;top:13%;width:48vw;height:48vh;opacity:.78}.hero-copy p{font-size:12px;max-width:280px}.section-head{margin-bottom:5vh}.section-head span:last-child{display:none}section{padding:8vh 6vw}.viewer{height:58vh}.caption{grid-template-columns:1fr;gap:9px}.caption h2{font-size:37px}.caption p{font-size:12px}.aboutgrid{grid-template-columns:1fr;gap:6vh}.aboutbig{font-size:16vw}.experience{grid-template-columns:1fr;gap:4vh}.experience h2{font-size:65px}.skill{grid-template-columns:42px 1fr}.skill span{font-size:29px}.contact h2{font-size:18vw}.contactgrid{grid-template-columns:1fr}.contactgrid div:nth-child(even){padding-left:0;border-left:0}footer{padding:22px 6vw;flex-direction:column;gap:10px}}
 </style>
 </head>
 <body>
-<div class="preloader"><div><div class="k">CIVIL / BIM / 2026</div><div class="line"></div><div class="n">SRIRAM</div></div></div>
+<div id="intro"><div class="intro-inner"><div class="intro-k">CIVIL / BIM / 2026</div><div class="intro-line"></div><div class="intro-name">SRIRAM</div></div></div>
 
 <header class="nav">
-<a class="brand" href="#home">SRIRAM<i>.</i></a>
+<a class="logo" href="#home">SRIRAM<i>.</i></a>
 <nav class="navlinks"><a href="#work">WORK</a><a href="#about">ABOUT</a><a href="#experience">EXPERIENCE</a><a href="#contact">CONTACT</a></nav>
-<div class="navright">SCROLL TO EXPLORE ↓</div>
+<a class="resume" href="Sriram-Sriram-Detailed-Resume.pdf" target="_blank" rel="noopener">RESUME ↗</a>
 </header>
 
-<section class="hero" id="home">
-<div class="grid"></div>
-<div class="hero-copy">
+<section class="hero" id="home"><div class="grid"></div><div class="hero-copy">
 <div class="eyebrow">CIVIL ENGINEERING GRADUATE / ASPIRING BIM ENGINEER</div>
-<h1><span>SIRIKONDA</span><span>SRIRAM</span></h1>
+<h1><div>SIRIKONDA</div><div>SRIRAM</div></h1>
 <p>A visual portfolio of architecture, BIM, structural modelling and detailing.</p>
-</div>
-<div class="portrait"><img src="dp.png" alt="Sirikonda Sriram"></div>
-<div class="scrollhint">01 — IDENTITY</div>
+</div><div class="portrait"><img src="dp.png" alt="Sirikonda Sriram"></div><div class="scroll">01 — IDENTITY / SCROLL TO EXPLORE ↓</div></section>
+
+<section id="work"><div class="section-head"><span><b>02</b> / SELECTED WORK</span><span>PROJECT VISUALS</span></div>
+
+<article class="project reveal"><div class="viewer arch"><img src="render.png" alt="G+5 Residential Apartment Building render"><div class="count">01</div></div><div class="caption"><div class="type">ARCHITECTURE</div><div><h2>G+5 Residential Apartment Building</h2><p>Revit Architecture course-completion project.</p></div><div></div></div></article>
+
+<article class="project reveal"><div class="viewer"><img src="floor-plan.png" alt="Floor plan"><div class="count">02</div></div><div class="caption"><div class="type">PLAN</div><div><h2>Floor Plan</h2><p>Architectural planning study.</p></div><div></div></div></article>
+
+<article class="project reveal"><div class="viewer technical"><img src="elevation-1.png" alt="Elevation sheet"><div class="count">03</div></div><div class="caption"><div class="type">ELEVATION</div><div><h2>Elevation Studies</h2><p>Project elevation sheet.</p></div><div></div></div></article>
+
+<article class="project reveal"><div class="viewer technical"><img src="elevation-2.png" alt="Second elevation sheet"><div class="count">04</div></div><div class="caption"><div class="type">ELEVATION</div><div><h2>Elevation — Detail View</h2><p>Project elevation sheet.</p></div><div></div></div></article>
+
+<article class="project reveal"><div class="viewer"><img src="structural-bim.png" alt="Structural BIM model"><div class="count">05</div></div><div class="caption"><div class="type">STRUCTURAL BIM</div><div><h2>Structural BIM</h2><p>3D structural model study.</p></div><div></div></div></article>
+
+<article class="project reveal"><div class="viewer"><img src="reinforcement.png" alt="Reinforcement model"><div class="count">06</div></div><div class="caption"><div class="type">REINFORCEMENT</div><div><h2>Reinforcement</h2><p>Reinforcement modelling study.</p></div><div></div></div></article>
+
+<article class="project reveal"><div class="viewer"><img src="excavation.png" alt="Excavation plan"><div class="count">07</div></div><div class="caption"><div class="type">EXCAVATION</div><div><h2>Excavation</h2><p>Excavation plan study.</p></div><div></div></div></article>
+
+<article class="project reveal"><div class="viewer technical"><img src="detailing.png" alt="Structural detailing sheet"><div class="count">08</div></div><div class="caption"><div class="type">DETAILING</div><div><h2>Structural Detailing</h2><p>Structural detailing sheet.</p></div><div></div></div></article>
 </section>
 
-<section id="work">
-<div class="head"><span><b>02</b> / SELECTED WORK</span><span>ACTUAL PROJECT ASSETS</span></div>
+<section class="about" id="about"><div class="section-head"><span><b>03</b> / ABOUT</span><span>HYDERABAD, TELANGANA</span></div><div class="aboutgrid reveal"><div class="aboutbig">BUILDING<br><em>INFORMATION</em><br>THROUGH <strong>DESIGN.</strong></div><div class="aboutcopy"><p>I’m Sirikonda Sriram, a Civil Engineering Graduate focused on building a career in BIM and digital construction workflows.</p><p>My portfolio brings together architectural modelling, structural BIM studies, reinforcement, excavation and detailing work.</p><div class="facts"><div>B.TECH CIVIL ENGINEERING / CGPA 8.33</div><div>MASTER DIPLOMA IN BIM TECHNOLOGIES / CAD DESK</div><div>REVIT ARCHITECTURE / COMPLETED</div><div>REVIT STRUCTURE / IN PROGRESS</div></div></div></div></section>
 
-<article class="project reveal"><div class="frame"><img src="render image(1).png" alt="G+5 residential apartment building render"><div class="num">01</div></div><div class="meta"><div class="tag">ARCHITECTURE</div><h2>G+5 Residential Apartment Building</h2><p>Revit Architecture course-completion project.</p></div></article>
+<section class="exp" id="experience"><div class="section-head"><span><b>04</b> / EXPERIENCE</span><span>FIELD EXPOSURE</span></div><div class="experience reveal"><div class="date">FEB — APR<br>2026</div><div><div class="eyebrow">HMDA / DIVISION-I</div><h2>Site Intern</h2><p>Hyderabad Metropolitan Development Authority (HMDA), Hyderabad.</p><p>Exposure to construction execution, structural execution, quality control and site management on a motorable bridge construction project.</p></div></div></section>
 
-<article class="project reveal"><div class="frame"><img src="Screenshot 2026-09-10 005154.png" alt="Floor plan"><div class="num">02</div></div><div class="meta"><div class="tag">PLAN</div><h2>Floor Plan</h2><p>Architectural planning study.</p></div></article>
+<section><div class="section-head"><span><b>05</b> / TOOLKIT</span><span>FAMILIAR WITH</span></div><div class="skills reveal">
+<div class="skill"><b>01</b><span>Revit Architecture — Completed</span></div><div class="skill"><b>02</b><span>Revit Structure — In Progress</span></div><div class="skill"><b>03</b><span>AutoCAD Civil / Architecture</span></div><div class="skill"><b>04</b><span>Civil 3D</span></div><div class="skill"><b>05</b><span>QGIS</span></div><div class="skill"><b>06</b><span>STAAD.Pro</span></div><div class="skill"><b>07</b><span>MS Word / Excel / PowerPoint</span></div></div></section>
 
-<article class="project reveal"><div class="frame"><img src="Elevation-1.png" alt="Elevation sheet"><div class="num">03</div></div><div class="meta"><div class="tag">ELEVATION</div><h2>Elevation Studies</h2><p>Project elevation sheets.</p></div></article>
+<section class="contact" id="contact"><div class="section-head"><span><b>06</b> / CONTACT</span><span>LET'S CONNECT</span></div><h2>LET'S BUILD<br><em>WHAT'S NEXT.</em></h2><div class="contactgrid"><div><small>EMAIL</small><a href="mailto:sriramsirikonda119@gmail.com">sriramsirikonda119@gmail.com</a></div><div><small>PHONE</small><a href="tel:+919392934742">+91 9392934742</a></div><div><small>LINKEDIN</small><a href="https://www.linkedin.com/in/sriram-sirikonda-16633833b" target="_blank" rel="noopener">linkedin.com/in/sriram-sirikonda</a></div><div><small>LOCATION</small><p>Hyderabad, Telangana</p></div></div></section>
 
-<article class="project reveal"><div class="frame"><img src="Screenshot 2026-09-10 003444.png" alt="Structural BIM model"><div class="num">04</div></div><div class="meta"><div class="tag">STRUCTURAL BIM</div><h2>Structural BIM</h2><p>3D structural model study.</p></div></article>
-
-<article class="project reveal"><div class="frame"><img src="Screenshot 2026-09-10 010048.png" alt="Reinforcement model"><div class="num">05</div></div><div class="meta"><div class="tag">REINFORCEMENT</div><h2>Reinforcement</h2><p>Reinforcement modelling study.</p></div></article>
-
-<article class="project reveal"><div class="frame"><img src="Screenshot 2026-09-10 010152.png" alt="Excavation plan"><div class="num">06</div></div><div class="meta"><div class="tag">EXCAVATION</div><h2>Excavation</h2><p>Excavation plan study.</p></div></article>
-
-<article class="project reveal"><div class="frame"><img src="Detailing-1.png" alt="Structural detailing sheet"><div class="num">07</div></div><div class="meta"><div class="tag">DETAILING</div><h2>Structural Detailing</h2><p>Structural detailing sheet.</p></div></article>
-</section>
-
-<section class="about" id="about">
-<div class="head"><span><b>03</b> / ABOUT</span><span>HYDERABAD, TELANGANA</span></div>
-<div class="aboutline"></div>
-<div class="aboutgrid reveal">
-<div class="aboutbig">BUILDING<br><em>INFORMATION</em><br>THROUGH <strong>DESIGN.</strong></div>
-<div class="copy">
-<p>I’m Sirikonda Sriram, a Civil Engineering Graduate focused on building a career in BIM and digital construction workflows.</p>
-<p>My portfolio brings together architectural modelling, structural BIM studies, reinforcement, excavation and detailing work.</p>
-<div class="facts"><span>B.TECH / 8.33 CGPA</span><span>BIM TECHNOLOGIES</span><span>REVIT ARCHITECTURE</span><span>REVIT STRUCTURE — IN PROGRESS</span></div>
-</div>
-</div>
-</section>
-
-<section class="experience" id="experience">
-<div class="head"><span><b>04</b> / EXPERIENCE</span><span>FIELD EXPOSURE</span></div>
-<div class="exp reveal"><div class="date">FEB — APR<br>2026</div><div><div class="eyebrow">HMDA / DIVISION-I</div><h2>Site Intern</h2><p>Hyderabad Metropolitan Development Authority (HMDA), Hyderabad.</p><p>Exposure to construction execution, structural execution, quality control and site management on a motorable bridge construction project.</p></div></div>
-</section>
-
-<section>
-<div class="head"><span><b>05</b> / TOOLKIT</span><span>FAMILIAR WITH</span></div>
-<div class="skillslist reveal">
-<div class="skill"><b>01</b><span>Revit Architecture</span></div><div class="skill"><b>02</b><span>Revit Structure</span></div><div class="skill"><b>03</b><span>AutoCAD Civil</span></div><div class="skill"><b>04</b><span>AutoCAD Architecture</span></div><div class="skill"><b>05</b><span>Civil 3D</span></div><div class="skill"><b>06</b><span>QGIS</span></div><div class="skill"><b>07</b><span>STAAD.Pro</span></div><div class="skill"><b>08</b><span>MS Word</span></div><div class="skill"><b>09</b><span>Excel</span></div><div class="skill"><b>10</b><span>PowerPoint</span></div>
-</div>
-</section>
-
-<section class="contact" id="contact">
-<div class="head"><span><b>06</b> / CONTACT</span><span>LET'S CONNECT</span></div>
-<div class="contacttitle">LET'S BUILD<br><em>WHAT'S NEXT.</em></div>
-<div class="contactgrid">
-<div><small>EMAIL</small><a href="mailto:sriramsirikonda119@gmail.com">sriramsirikonda119@gmail.com</a></div>
-<div><small>PHONE</small><a href="tel:9392934742">+91 9392934742</a></div>
-<div><small>LINKEDIN</small><a href="https://www.linkedin.com/in/sriram-sirikonda-16633833b" target="_blank" rel="noreferrer">linkedin.com/in/sriram-sirikonda</a></div>
-<div><small>LOCATION</small><p>Hyderabad, Telangana</p></div>
-</div>
-</section>
-
-<footer><b>SRIRAM.</b><span>CIVIL ENGINEERING / BIM / 2026</span><span>© 2026 SIRIKONDA SRIRAM</span></footer>
-
+<footer><b>SRIRAM.</b><span>CIVIL ENGINEERING / BIM</span><span>© 2026 SIRIKONDA SRIRAM</span></footer>
 <script>
-document.addEventListener("DOMContentLoaded",function(){
-  const items=document.querySelectorAll(".reveal");
-  const io=new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");io.unobserve(e.target)}})
-  },{threshold:.12});
-  items.forEach(x=>io.observe(x));
-  const portrait=document.querySelector(".portrait img"), title=document.querySelector(".hero h1");
-  window.addEventListener("scroll",()=>{
-    const y=window.scrollY;
-    if(portrait) portrait.style.transform="translateY("+Math.min(y*.06,55)+"px) scale(1.03)";
-    if(title) title.style.transform="translateY("+Math.min(y*.035,35)+"px)";
-  },{passive:true});
-});
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");observer.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll(".reveal").forEach(e=>observer.observe(e));
+window.addEventListener("scroll",()=>{const y=scrollY;const p=document.querySelector(".portrait img");if(p)p.style.transform="translateY("+Math.min(y*.045,40)+"px)";},{passive:true});
 </script>
 </body>
 </html>

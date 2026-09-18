@@ -1,1 +1,1 @@
-Sirikonda Sriram — Cinematic BIM Portfolio. Static GitHub/Vercel deployment.
+Sirikonda Sriram — Cinematic BIM Portfolio V2. Static GitHub/Vercel build with a Resume tab.
